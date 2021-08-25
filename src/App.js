@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hello React World</h1>
-      <p></p>
+      <p>This is the Body of App component</p>
     </div>
   );
 }
