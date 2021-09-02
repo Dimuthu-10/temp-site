@@ -10,7 +10,8 @@ const Home = () => {
             {/* Header bar including nav */}
             <div className="homepage_Header">
                 <nav className="homepage_nav">
-                    
+                    <Link to="gmail">Gmail</Link>
+                    <Link to="images">Images</Link>
                 </nav>
             </div>
 
