@@ -9,7 +9,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 20px;
+    min-width: 13vw;
+    /* padding: 10px 10px; */
+    margin: 10px 15px;
+}
+
+.homepage_nav > .MuiSvgIcon-root{
+    margin-left: 15px;
 }
 
 .footer_nav{
@@ -19,16 +25,29 @@
     padding: 10px 20px;
 }
 
+.nav_left{
+    justify-content: space-evenly;
+}
+
 .homepage_nav a{
     font-family:Arial, Helvetica, sans-serif;
     padding-left: 15px;
     font-size: 15px;
-    color: black;
+    color: rgba(0, 0,0, 0.87);
+    text-decoration: inherit;
 }
 
 .footer_nav a{
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
+    padding-left: 15px;
     font-size: 15px;
-    color: rgba(147, 151, 158,0.9);
+    color: #70757a;
+    text-decoration: inherit;
 }
+
+.homepage_nav a:hover, .footer_nav a:hover{
+    text-decoration: underline;
+}
+
+
+
