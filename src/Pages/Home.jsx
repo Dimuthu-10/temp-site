@@ -1,3 +1,7 @@
+import React from 'react';
+import "./Home.css";
+import { Link } from 'react-router-dom';
+
 const Home = () => {
     return ( 
         <div>
@@ -5,7 +9,9 @@ const Home = () => {
             
             {/* Header bar including nav */}
             <div className="homepage_Header">
-                <p>This is header</p>
+                <nav className="homepage_nav">
+                    
+                </nav>
             </div>
 
             {/* content */}
