@@ -1,6 +1,8 @@
 import React from 'react';
 import './Home.css'
 import { Link } from 'react-router-dom';
+import AppsIcon from "@material-ui/icons/Apps";
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const Home = () => {
     return ( 
@@ -9,8 +11,10 @@ const Home = () => {
                 {/* Header bar including nav */}
                 <div className="homepage_Header">
                     <nav className="homepage_nav">
-                        <Link to="gmail">Gmail</Link>
-                        <Link to="images">Images</Link>
+                            <Link to="gmail">Gmail</Link>
+                            <Link to="images">Images</Link>
+                            <AppsIcon />
+                            <AccountCircleIcon />
                     </nav>
                 </div>
 
