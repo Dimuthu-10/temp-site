@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css'
+import Searchbar from '../Components/Searchbar';
 import { Link } from 'react-router-dom';
 import AppsIcon from "@material-ui/icons/Apps";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
@@ -23,6 +24,10 @@ const Home = () => {
                     <div className="logo">
                         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google tag"/>
                     </div>
+                    
+                    {/* Search Box */}
+                    <Searchbar />
+                    
                 </div>
 
                 {/* Footer */}
