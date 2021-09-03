@@ -16,6 +16,14 @@
 
 .homepage_nav > .MuiSvgIcon-root{
     margin-left: 15px;
+    height: 30px;
+    width: 30px;
+   
+}
+
+.homepage_nav > .MuiSvgIcon-root:hover{
+    background-color: #5f6368 ;
+    border-radius: 50%;
 }
 
 .footer_nav{
