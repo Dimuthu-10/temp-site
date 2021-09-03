@@ -49,5 +49,15 @@
     text-decoration: underline;
 }
 
+.logo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 5%;
+}
 
+.logo img{
+    object-fit: contain;
+    height: 90px;
+}
 

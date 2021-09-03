@@ -20,7 +20,9 @@ const Home = () => {
 
                 {/* content */}
                 <div className="homepage_body">
-                    <p>This is Body</p>
+                    <div className="logo">
+                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google tag"/>
+                    </div>
                 </div>
 
                 {/* Footer */}
