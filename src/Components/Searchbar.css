@@ -2,13 +2,18 @@
     display: flex;
     align-items: center;
     border: 1px solid lightgray;
-    height:25px;
+    height:23px;
     padding: 10px 20px;
     border-radius: 999px;
     width: 75vw;
     margin: 0 auto;
     margin-top: 20px;
     max-width: 500px;
+}
+
+.search_box > .MuiSvgIcon-root{
+    width: 20px;
+    height: 20px;
 }
 
 .search_box:hover{
@@ -19,7 +24,7 @@
     flex: 1;
     padding: 10px 20px;
     border: none;
-    font-size: medium;
+    font-size: 17px;
 }
 
 .search_box input:focus{
