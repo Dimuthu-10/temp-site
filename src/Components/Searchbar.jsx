@@ -4,19 +4,17 @@ import "./Searchbar.css"
 import SearchIcon from '@material-ui/icons/Search';
 import MicIcon from '@material-ui/icons/Mic';
 import { Button } from '@material-ui/core';
-import { useHistory } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 
 function Searchbar() {
-    const history = useHistory();
     const[input, setInput] = useState('');
-   
+    const history = useHistory();
 
     const search = (e) =>{
         e.preventDefault();
 
         console.log("you hit the enter >>",input);
-        
-        history.push("/search");
+        history.push('/search');
     }
 
     return (
