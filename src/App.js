@@ -10,7 +10,7 @@ function App() {
         <Switch>
 
           {/* Search Route */}
-          <Route path='/search'>
+          <Route path="/search">
             <Search />
           </Route>
 
@@ -18,6 +18,7 @@ function App() {
           <Route path='/'>
             <Home />
           </Route>
+          
         </Switch>
       </Router>
       
