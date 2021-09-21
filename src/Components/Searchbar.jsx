@@ -25,7 +25,7 @@ function Searchbar({hideButtons=false}) {
                 <MicIcon />
             </div>
 
-            {!hideButtons? (
+            {!hideButtons ? (
                 <div className="search_cards">
                     <Button type='submit' onClick={search} variant="outlined">Google Search</Button>
                     <Button variant="outlined">I'm Feeling Lucky</Button>
