@@ -5,8 +5,12 @@ import SearchIcon from '@material-ui/icons/Search';
 import MicIcon from '@material-ui/icons/Mic';
 import { Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
+import { useStateValue } from '../stateProvider';
+import { actionTypes } from '../reducer';
 
-function Searchbar() {
+function Searchbar({hideButtons=false}) {
+const [{}, dispatch] = useStateValue();
+
     const[input, setInput] = useState('');
     const history = useHistory();
 
@@ -14,8 +18,16 @@ function Searchbar() {
         e.preventDefault();
 
         console.log("you hit the enter >>",input);
+
+        dispatch({
+            type: actionTypes.SET_SEARCH_TERM,
+            term: input
+        })
+
         history.push('/search');
-    }
+    };
+
+
 
     return (
         <form className="search">
@@ -25,10 +37,18 @@ function Searchbar() {
                 <MicIcon />
             </div>
 
-            <div className="search_cards">
-               <Button type='submit' onClick={search} variant="outlined">Google Search</Button>
-               <Button variant="outlined">I'm Feeling Lucky</Button>
-            </div>
+            {!hideButtons ? (
+                <div className="search_cards">
+                    <Button type='submit' onClick={search} variant="outlined">Google Search</Button>
+                    <Button variant="outlined">I'm Feeling Lucky</Button>
+                </div>
+            ):(
+                <div className="search_cards">
+                    <Button className="hidden" type='submit' onClick={search} variant="outlined">Google Search</Button>
+                    <Button className="hidden" variant="outlined">I'm Feeling Lucky</Button>
+                </div>
+            )}
+            
         </form>
     )
 }
